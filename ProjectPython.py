@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-import plotly.express as px
 import plotly.colors as pc
 import numpy as np
 
@@ -144,7 +143,7 @@ st.markdown(
 )
 
 # IMPORT DATA
-data = pd.read_csv("C:/Users/user/Documents/Statistika 101!/Semester 6/Pengantar Python/Auto Sales Data.csv")
+data = pd.read_csv(r"C:/Users/user/Documents/Statistika 101!/Semester 6/Pengantar Python/Kelompok 4_TBP Python/Auto Sales Data.csv")
 data["ORDERDATE"] = pd.to_datetime(data["ORDERDATE"], dayfirst=True)
 data["YEAR"] = data["ORDERDATE"].dt.year
 
