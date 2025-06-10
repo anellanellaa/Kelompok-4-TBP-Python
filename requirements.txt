@@ -1,6 +1,4 @@
 pandas
-plotly.express
-plotly.graph_objects
-plotly.colors
+plotly
 streamlit
 numpy
