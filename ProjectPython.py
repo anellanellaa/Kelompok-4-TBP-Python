@@ -143,7 +143,7 @@ st.markdown(
 )
 
 # IMPORT DATA
-data = pd.read_csv(r"C:/Users/user/Documents/Statistika 101!/Semester 6/Pengantar Python/Kelompok 4_TBP Python/Auto Sales Data.csv")
+data = pd.read_csv(r"Auto Sales Data.csv")
 data["ORDERDATE"] = pd.to_datetime(data["ORDERDATE"], dayfirst=True)
 data["YEAR"] = data["ORDERDATE"].dt.year
 
